@@ -7,9 +7,9 @@ public class Tests {
     @Test
     public void addtoCartTest(){
         ProductPage productPage = new ProductPage();
-        productPage.setAmount( 3 );
-        productPage.addToCart();
-        productPage.gotToCart();
+        productPage.setAmount( 3 ).addToCart().gotToCart();
+
+
         productPage.goTo( "https://onedrive.live.com/login/" );
          String productPrice = productPage.productPrice;
 

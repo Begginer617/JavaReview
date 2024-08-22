@@ -6,14 +6,17 @@ package AccessModifires1;
 public class ProductPage extends BasePage{
     String productName;
     String productPrice;
-    void addToCart () {
+    protected ProductPage addToCart () {
         BasePage basePage = new BasePage();
         basePage.searchForProduct( "product" );
         System.out.println( "Product added to cart" );
     }
 
-    protected void setAmount(int amount){
+
+
+    protected ProductPage setAmount(int amount){
         System.out.println("wybrano ilosc: " + amount);
+        return new ProductPage();
     }
     protected void gotToCart(){
         System.out.println("Przejscie do koszyka");

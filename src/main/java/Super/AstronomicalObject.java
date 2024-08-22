@@ -2,7 +2,7 @@ package Super;
 
 public class AstronomicalObject {
 
-    private int prbitalPeriodDays;
+    private int orbitalPeriodDays;
     private float radius;
     private String name;
 

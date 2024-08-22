@@ -2,6 +2,7 @@ package GettersAndSetters;
 
 public class Address {
 
+<<<<<<< HEAD
 
     private String street;
     private String apartmentNumber;
@@ -26,10 +27,26 @@ public class Address {
 
 
     // Getters
+=======
+    private String street;
+    private int apartment;
+    private String city;
+
+
+    // w momencie towrzenie obiektu adres , wartosci mozna przupisac
+    public Address(String street , String apartment , String cityName) {
+        this.street = street;
+        this.apartment = Integer.parseInt( apartment );
+        this.city = cityName;
+
+    }
+
+>>>>>>> 3458f1e833d69039bada58507210ed99fa02de51
     public String getStreet() {
         return street;
     }
 
+<<<<<<< HEAD
     public String getApartment() {
         return apartmentNumber;
     }
@@ -51,6 +68,28 @@ public class Address {
 
     public void setApartment(String apartmentNumber) {
         this.apartmentNumber = apartmentNumber;
+=======
+    public int getApartment() {
+        return this.apartment;
+    }
+
+    public String getCity() {
+        return this.city;
+    }
+
+    public void setCity(String cityName) {
+        city = cityName;
+    }
+
+    public void setApartment(int apartmentNumber) {
+        this.apartment = apartmentNumber;
+    }
+
+
+
+    public void setStreet(String streetName) {
+        this.street = streetName;
+>>>>>>> 3458f1e833d69039bada58507210ed99fa02de51
     }
 
 }

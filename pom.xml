@@ -85,6 +85,7 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -103,6 +104,8 @@
             <version>15.0</version>
             <scope>compile</scope>
         </dependency>
+=======
+>>>>>>> 3458f1e833d69039bada58507210ed99fa02de51
     </dependencies>
 
     <build>

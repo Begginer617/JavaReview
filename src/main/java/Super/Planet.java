@@ -19,8 +19,8 @@ public class Planet extends AstronomicalObject {
         this.hasRings = hasRings;
 
 
-        Public Planet(int mass){
-
+        public Planet(int mass){
+        this.mass= mass;
         }
 
     }

@@ -17,5 +17,8 @@ public class AstronomicalObject {
         this.radius = radius;
 
     }
+    public AstronomicalObject(){
+
+    }
 
 }

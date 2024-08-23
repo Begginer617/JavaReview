@@ -1,7 +1,5 @@
 package Super;
 
-import java.security.PublicKey;
-
 public class Planet extends AstronomicalObject {
     private int numberOfMoons;
     private int mass;
@@ -14,15 +12,18 @@ public class Planet extends AstronomicalObject {
         super(name);
     }
 
-    public Planet(String name,int orbitalPeriodDays, float radius, boolean hasRings ){
-        super(name, orbitalPeriodDays, radius );
+    public Planet(String name,int orbitalPeriodDays, float radius, boolean hasRings ) {
+        super( name , orbitalPeriodDays , radius );
         this.hasRings = hasRings;
 
-
+    }
         public Planet(int mass){
         this.mass= mass;
         }
 
+    @Override
+    public int getOrbitalPeriod() {
+        return super.getOrbitalPeriod();
     }
-
 }
+

@@ -1,6 +1,6 @@
 package Super;
 
-public class AstronomicalObject {
+public abstract class AstronomicalObject {
 
     private int orbitalPeriodDays;
     private float radius;
@@ -21,4 +21,9 @@ public class AstronomicalObject {
 
     }
 
+    public int getOrbitalPeriodDays() {
+        return orbitalPeriodDays;
+    }
+
+    public abstract int getOrbitalPeriod();
 }

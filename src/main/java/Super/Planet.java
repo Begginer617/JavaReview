@@ -23,7 +23,7 @@ public class Planet extends AstronomicalObject {
 
     @Override
     public int getOrbitalPeriod() {
-        return super.getOrbitalPeriod();
+        return super.getOrbitalPeriod()/365;
     }
 }
 

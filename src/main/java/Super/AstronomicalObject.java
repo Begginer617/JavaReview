@@ -25,5 +25,7 @@ public abstract class AstronomicalObject {
         return orbitalPeriodDays;
     }
 
-    public abstract int getOrbitalPeriod();
+    public int getOrbitalPeriod() {
+        return getOrbitalPeriod();
+    }
 }

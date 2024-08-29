@@ -24,7 +24,6 @@
         <webdrivermanager.version>5.5.3</webdrivermanager.version>
     </properties>
 
-
     <dependencies>
         <!-- WEBDRIVER -->
         <dependency>
@@ -46,7 +45,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber-junit.version}</version>
-            <scope>compile</scope>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
@@ -58,7 +57,6 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -83,20 +81,13 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-<<<<<<< HEAD
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>RELEASE</version>
-            <scope>compile</scope>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -104,8 +95,6 @@
             <version>15.0</version>
             <scope>compile</scope>
         </dependency>
-=======
->>>>>>> 3458f1e833d69039bada58507210ed99fa02de51
     </dependencies>
 
     <build>
@@ -120,6 +109,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

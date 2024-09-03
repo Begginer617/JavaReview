@@ -1,30 +1,22 @@
 package GettersAndSetters;
 
-<<<<<<< HEAD
-class Customer {
+import java.util.Objects;
 
-    private String name;
-    private String lastname;
-    private int age;
-    private Address address;
+public class Customer {
 
-=======
-public class Costumer {
     private String name;
     private String lastName;
     private int age;
     private Address address;
 
-
-
->>>>>>> 3458f1e833d69039bada58507210ed99fa02de51
+    // Getter for address
     public Address getAddress() {
         return address;
     }
 
+    // Setter for address
     public void setAddress(Address addressParameter) {
-<<<<<<< HEAD
-        address = copy( addressParameter );
+        this.address = addressParameter;
     }
 
     // Getter for age
@@ -32,39 +24,43 @@ public class Costumer {
         return age;
     }
 
-    // Setter for age
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    private Address copy(@org.jetbrains.annotations.NotNull Address addressToCopy) {
-        Address address = new Address( addressToCopy.getStreet() ,
-                                       addressToCopy.getApartment() ,
-                                       addressToCopy.getCity() );
-        return address;
-=======
-        address = addressParameter;
-    }
-
+    // Setter for age with validation
     public void setAge(int ageParameter) throws IllegalArgumentException {
-        if (ageParameter < 0) throw new IllegalArgumentException( "wiek nie moze byc liczba ujemną" );
-        age = ageParameter;
-
+        if (ageParameter < 0) throw new IllegalArgumentException("Age cannot be negative");
+        this.age = ageParameter;
     }
 
-    public String getAge() {
-        return age + " lat";
->>>>>>> 3458f1e833d69039bada58507210ed99fa02de51
+    // Method to get age as a string
+    public String getAgeAsString() {
+        return age + " years";
     }
 
+    public Customer(String name, String lastName, int age, Address address) {
+        this.name = name;
+        this.lastName = lastName;
+        setAge(age);  // Using setter for validation
+        this.address = address;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Customer{name='" + name + "', lastName='" + lastName + "', age=" + age + ", address=" + address + "}";
+    }
+
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return age == customer.age && name.equals(customer.name) && lastName.equals(customer.lastName) && address.equals(customer.address);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, lastName, age, address);
+    }
 
 }
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> 3458f1e833d69039bada58507210ed99fa02de51

@@ -1,10 +1,8 @@
 package Accessibility;
 
-<<<<<<< HEAD
+
 import org.junit.jupiter.api.Test;
-=======
-import org.junit.Test;
->>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346
+
 
 public class Accessibility {
     int liczba1 = 5;

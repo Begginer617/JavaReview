@@ -24,6 +24,10 @@
         <webdrivermanager.version>5.5.3</webdrivermanager.version>
     </properties>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346
     <dependencies>
         <!-- WEBDRIVER -->
         <dependency>
@@ -45,7 +49,11 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber-junit.version}</version>
+<<<<<<< HEAD
             <scope>test</scope>
+=======
+            <scope>compile</scope>
+>>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
@@ -57,6 +65,10 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+<<<<<<< HEAD
+=======
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+>>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -77,6 +89,7 @@
             <artifactId>Exercies_Java</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+<<<<<<< HEAD
 
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -84,16 +97,27 @@
             <version>15.0</version>
             <scope>compile</scope>
         </dependency>
+=======
+>>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.11.0</version>
+=======
+<<<<<<< HEAD
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+>>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
@@ -102,11 +126,21 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+<<<<<<< HEAD
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>compile</scope>
         </dependency>
+=======
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>15.0</version>
+            <scope>compile</scope>
+        </dependency>
+=======
+>>>>>>> 3458f1e833d69039bada58507210ed99fa02de51
+>>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346
     </dependencies>
 
     <build>
@@ -122,4 +156,9 @@
         </plugins>
     </build>
 
+<<<<<<< HEAD
 </project>
+=======
+
+</project>
+>>>>>>> e8e2e58fb02184f55dba35d20dd9956b01f29346

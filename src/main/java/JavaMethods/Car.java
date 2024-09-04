@@ -15,15 +15,11 @@ public class Car {
     }
 
     boolean changeColour(String wantedColour) {
-        if (wantedColour == "Black")
-            return true;
-        else return false;
+        return wantedColour == "Black";
     }
 
     boolean isColourRed(String wantedColour) {
-        if (wantedColour.equals("Red"))
-            return true;
-        else return false;
+        return wantedColour.equals("Red");
     }
 
 

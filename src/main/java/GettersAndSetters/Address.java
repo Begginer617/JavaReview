@@ -3,7 +3,7 @@ package GettersAndSetters;
 public class Address {
 
     private String street;
-    private String apartmentNumber;
+    private final String apartmentNumber;
     private String city;
     private String postalCode;
 

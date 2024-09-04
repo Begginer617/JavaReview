@@ -9,8 +9,8 @@ public class User {
 
     void login(String username, String password) {
         if (username.equals(this.username) && password.equals(this.password)) {
-            System.out.println("Logging user:" + username + "/" + password);
-        } else System.out.println("Inccorect password and/or username.");
+            System.out.println("Logging user:" + username + "/" + password + "\n" + "Logging successful");
+        } else System.out.println("Incorrect password and/or username.");
 
     }
 

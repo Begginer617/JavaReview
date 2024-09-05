@@ -1,6 +1,6 @@
 package AbstractClasesAndInterfaces;
 
-public class Professor extends User{
+public class Professor extends User implements Employee{
 
     Professor (String username, String password){
         super(username,password);

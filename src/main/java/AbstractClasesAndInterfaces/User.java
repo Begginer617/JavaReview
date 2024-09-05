@@ -1,11 +1,15 @@
 package AbstractClasesAndInterfaces;
 
-public class User {
+abstract class User {
     String username;
     String password;
     String name;
     String lastName;
 
+     User(String password, String name) {
+        this.password = password;
+        this.name = name;
+    }
 
     void login(String username, String password) {
         if (username.equals(this.username) && password.equals(this.password)) {
@@ -17,6 +21,9 @@ public class User {
     void logOut() {
         System.out.println("Logged off");
     }
+
+
+
 
 }
 

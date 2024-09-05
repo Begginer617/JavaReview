@@ -3,6 +3,7 @@ package AbstractClasesAndInterfaces;
 public class Professor extends User{
 
     Professor (String username, String password){
+        super(username,password);
         this.username= username;
         this.password=password;
     }

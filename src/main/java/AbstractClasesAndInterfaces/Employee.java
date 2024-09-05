@@ -21,14 +21,19 @@ public interface Employee {
     default void takeSickLeave() {
 
     }
-    default  void quitJob(){
-        System.out.println("Nara!");
+
+    default void quitJob() {
+        printBy();
     }
 
-    static void fireEmployee(Employee[]employees){
-        for (Employee employee:employees){
+    static void fireEmployee(Employee[] employees) {
+        for (Employee employee : employees) {
             employee.quitJob();
         }
     }
 
+    private void printBy() {
+        System.out.println("Naraaaa!");
+
+    }
 }

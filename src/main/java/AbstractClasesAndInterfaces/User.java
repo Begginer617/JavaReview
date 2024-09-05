@@ -23,7 +23,7 @@ abstract class User {
     }
 
 
-
+    abstract void sendMessage(String message);
 
 }
 

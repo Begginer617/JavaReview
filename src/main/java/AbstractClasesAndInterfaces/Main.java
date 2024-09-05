@@ -6,7 +6,6 @@ public class Main {
         Student student = new Student("student","test1234");
         student.login("student","test1234");
     }
-User user = new Professor("Malciki","1111");
 
 
 }

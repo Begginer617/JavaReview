@@ -3,9 +3,13 @@ package AbstractClasesAndInterfaces;
 public class Student extends User{
     Student (String username, String password){
         super(username, password);
-        this.username= username;
-        this.password=password;
     }
+
+    @Override
+    void sendMessage(String message) {
+
+    }
+
     void checkNotes(){
         System.out.println("Checking marks");
     }

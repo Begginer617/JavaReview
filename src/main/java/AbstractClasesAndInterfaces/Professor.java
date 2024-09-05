@@ -21,13 +21,14 @@ public class Professor extends User implements Employee {
         System.out.println(message);
     }
 
-    void takeSickLeave() {
+    public void takeSickLeave() {
         System.out.println("Sick leave confirmation has been sent by Professor ");
     }
 
-    void takeVacation(int days) {
+    public void takeVacation(int days) {
         System.out.println("Holiday leave approval has been sent. " + "Length of holiday leave" + days + "days");
     }
+
 
 
 }

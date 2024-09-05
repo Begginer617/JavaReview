@@ -25,4 +25,10 @@ public interface Employee {
         System.out.println("Nara!");
     }
 
+    static void fireEmployee(Employee[]employees){
+        for (Employee employee:employees){
+            employee.quitJob();
+        }
+    }
+
 }

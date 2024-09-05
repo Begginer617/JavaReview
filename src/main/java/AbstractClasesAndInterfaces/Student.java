@@ -7,7 +7,8 @@ public class Student extends User{
 
     @Override
     void sendMessage(String message) {
-
+        System.out.println("Sending text message to professor");
+        System.out.println(message);
     }
 
     void checkNotes(){
